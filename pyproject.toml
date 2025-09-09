@@ -6,4 +6,5 @@ readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "pyttsx3>=2.99",
+    "pywin32>=311",
 ]
