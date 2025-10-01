@@ -12,7 +12,7 @@ import random
 # Initialize the pyttsx3 engine
 engine = pyttsx3.init()
 voices = engine.getProperty('voices')
-engine.setProperty('voice', voices[-1].id)
+engine.setProperty('voice', voices[1].id)
 
 def speak(audio):
     engine.say(audio)
@@ -79,4 +79,3 @@ if __name__ == "__main__":
             speak("Goodbye sir, take care!")
             sys.exit(0)
 
-        # (rest of your features stay same...)
