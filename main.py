@@ -57,7 +57,6 @@ def restart():
 def sleep_pc():
     speak("Putting the system to sleep.")
     os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
-# ----------------------------------
 
 if __name__ == "__main__":
     wish()
