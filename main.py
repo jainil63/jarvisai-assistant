@@ -45,7 +45,6 @@ def wish():
         speak("Good evening sir!!")
     speak("I am Jarvis, please tell me how can I help you!!")
 
-# ---- System Control Functions ----
 def shutdown():
     speak("Shutting down the system.")
     os.system("shutdown /s /t 1")
@@ -63,7 +62,6 @@ if __name__ == "__main__":
     while True:
         query = takecommand()
 
-        # ---- New Commands ----
         if "shutdown" in query:
             shutdown()
 
@@ -77,4 +75,3 @@ if __name__ == "__main__":
         elif "quit jarvis" in query or "bye" in query:
             speak("Goodbye sir, take care!")
             sys.exit(0)
-
